@@ -13,7 +13,7 @@
 
 body{
     background-color: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -22,13 +22,21 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-size: 80px;
+}
+
+header .lg-marvel{
+    justify-content: space-between;
+    background-size: 80px;
+    height: 20%;
+    width: 20%;
 }
 
 header .logo{
     margin-left: 5px;
-    color: var(--vermelho);
+    color: white;
     font-family: 'arial black';
-    font-size: 40px;
+    font-size: 80px;
 }
 header nav a{
     text-decoration: none;
@@ -44,7 +52,7 @@ header nav a:hover{
 
 .filme-principal{
     font-size: 16px;
-    background:  linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-lendas.jpg');
+    background:  linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%), url('../img/capa-principal.jpg');
 
     height: 400px;
     background-size: cover;
@@ -65,7 +73,8 @@ header nav a:hover{
 .filme-principal .titulo{
     margin-top: 15%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Teko', 'Trebuchet MS', Arial, sans-serif;
+
 }
 
 .botao{
@@ -95,4 +104,53 @@ header nav a:hover{
 
 .filme-principal .container{
     width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.series{
+    font-size: 16px;
+    background:  linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%), url('../img/series/capa-series.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filmes{
+    font-size: 16px;
+    background:  linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%), url('../img/filmes/capa-filmes.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.documentarios{
+    font-size: 16px;
+    background:  linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%), url('../img/documentarios/capa-documentarios.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
